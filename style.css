@@ -1,0 +1,38 @@
+ul.cssMenu, ul.cssMenu ul
+{
+	list-style:none;
+	margin:0; padding:0;
+	position: relative;
+}
+
+ul.cssMenu ul 						
+{ 
+        display:none; /*initially menu item is hidden*/
+        position: absolute; /*absolute positioning is important for menu to float*/
+		clear:none;
+}
+
+ul.cssMenu li						
+{ 
+        display:inline; /*display menu horizontally*/
+}
+
+ul.cssMenu li a
+{
+	text-decoration: none;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #036;
+}
+
+ul.cssMenu li a:hover
+{
+color: #fff;
+background-color: #369;
+}
+
+/* Hover effect for menu*/
+ul.cssMenu li:hover > ul 			
+{ 
+	display:block;
+}
