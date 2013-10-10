@@ -15,22 +15,31 @@
 </title>
 </head>
 <body>
-
-<form name="login">
-    <input type="text" name="userid" placeholder = "Username"/>
-    <input type="password" name="pswrd" placeholder = "Password"/>
-        <p class = "keeplogin">
-            <input type = "checkbox" name = "loginkeeping" id = "loginkeeping" value = "loginkeeping" />
-            <label for = "loginkeeping">Keep me logged in</label>
-        </p>
-        <input type="button" onclick="check(this.form)" value="Login" />
-        <input type="reset" value="Cancel"/>
-        <p class="change_link">
+    <div id = "containerLogin">
+        <a class = "hiddenanchor" id = "toregister"> </a>
+        <a class = "hidenanchor" id = "tologin"></a>
+        <div id = "wrapper">
+            <div id = "login" class = "animate form">
+                <form autocomplete = "on">
+                    <input type="text" name="userid" placeholder = "Username"/>
+                    <input type="password" name="pswrd" placeholder = "Password"/>
+                    <p class = "keeplogin">
+                        <input type = "checkbox" name = "loginkeeping" id = "loginkeeping" value = "loginkeeping" />
+                        <label for = "loginkeeping">Stay logged in</label>
+                    </p>
+                    <p class = "login button">
+                        <input type="button" onclick="check(this.form)" value="Login" />
+                    </p>
+                    <p>
+                        <input type="reset" value="Cancel"/>
+                    <p class="change_link">
                             
-        <a href="#toregister" class="to_register">Register</a>
-        </p>
-</form>
-
+                        <a href="#forgotPassword" class="to_register">Forgot password</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
 <script language="javascript">
 function check(form)/*function to check userid & password*/
 {
