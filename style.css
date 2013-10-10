@@ -20,7 +20,7 @@ nav ul
 	list-style: none;
 	position: relative;
 	display: inline-table;
-	width: 95%; // Set the width of the navbar as a percentage of the window width
+	width: 95%; /* Set the width of the navbar as a percentage of the window width */
 }
 
 nav ul:after 
@@ -31,7 +31,7 @@ nav ul:after
 nav ul li {
 	float: left;
 	position: relative;
-	width: 25%; // Set the width of the nav bar selections
+	width: 25%; /* Set the width of the nav bar selections */
 }
 
 nav ul li:hover 
@@ -50,11 +50,11 @@ nav ul li:hover a
 nav ul li a 
 {
 	display: block;
-	padding: 5px 4px; // Height first, width second
+	padding: 5px 4px; /* Height first, width second */
 	color: #757575; 
 	text-decoration: none;
-	text-align: center; // Centers all the text in the navbar
-	vertical-align: middle; // Centers the text vertically within the individual divs
+	text-align: center; /* Centers all the text in the navbar */
+	vertical-align: middle; /* Centers the text vertically within the individual divs */
 }
 
 nav ul ul {
@@ -71,7 +71,7 @@ nav ul ul li
 	border-top: 1px solid #6b727c;
 	border-bottom: 1px solid #575f6a;
 	position: relative;
-	width: 100%; // Has to be here to set the length of the clickable area of the line items which appear on hover.
+	width: 100%; /* Has to be here to set the length of the clickable area of the line items which appear on hover. */
 }
 
 nav ul ul li a 
