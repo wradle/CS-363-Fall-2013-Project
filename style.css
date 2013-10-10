@@ -31,7 +31,7 @@ nav ul:after
 nav ul li {
 	float: left;
 	position: relative;
-	width: 20%; // Set the width of the nav bar selections
+	width: 25%; // Set the width of the nav bar selections
 }
 
 nav ul li:hover 
@@ -54,6 +54,7 @@ nav ul li a
 	color: #757575; 
 	text-decoration: none;
 	text-align: center; // Centers all the text in the navbar
+	vertical-align: middle; // Centers the text vertically within the individual divs
 }
 
 nav ul ul {
