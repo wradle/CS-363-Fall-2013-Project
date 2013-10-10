@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+ <meta charset="utf-8" />
+ 
+ <link rel="stylesheet" href="login2.css" type="text/css" />
+ <!--link rel="stylesheet" href="login2b.css" type="text/css" /-->
+ <!--[if lt IE 9]>
+ <script src="html5.js"></script>
+ <![endif]-->
+
+<head>
+<title>
+    Login
+</title>
+</head>
+<body>
+
+<form name="login">
+    <input type="text" name="userid" placeholder = "Username"/>
+    <input type="password" name="pswrd" placeholder = "Password"/>
+        <p class = "keeplogin">
+            <input type = "checkbox" name = "loginkeeping" id = "loginkeeping" value = "loginkeeping" />
+            <label for = "loginkeeping">Keep me logged in</label>
+        </p>
+        <input type="button" onclick="check(this.form)" value="Login" />
+        <input type="reset" value="Cancel"/>
+        <p class="change_link">
+                            
+        <a href="#toregister" class="to_register">Register</a>
+        </p>
+</form>
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+/*the following code checkes whether the entered userid and password are matching*/
+if(form.userid.value == "admin" && form.pswrd.value == "admin")
+{
+window.open('cdChris12.servebeer.com')/*opens the target page while Id & password matches*/
+}
+else
+{
+alert("Error Password or Username")/*displays error message*/
+}
+}
+</script>
+</body>
+</html>
